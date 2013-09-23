@@ -11,7 +11,7 @@
 			&.open {background: darken(@luleaBlue,5%);.box-shadow(none)}
 		}
 		.btn {
-			color: @white;background:transparent;.rounded(0);display: inline-block;border:0;width: auto;padding:0;line-height: 48px;min-width: 48px;font-size: 1.25em;text-shadow:0 -1px 0 fade(@black,70%);
+			color: @white;background:transparent;.rounded(0);display: inline-block;border:0;width: auto;padding:0;line-height: 48px;min-width: 48px;font-size: 1.25em;text-shadow:0 -1px 0 fade(@black,30%);
 			img {float: left;clear: right;display: block;width: 32px;height: 32px;margin:8px 0;.box-shadow(0 0 1px darken(@luleaBlue,20%))}
 			&:hover {background: darken(@luleaBlue,5%);.rounded(0);}
 			&:focus, &:active {.box-shadow(none);color:@white}
@@ -62,10 +62,10 @@
 		.nav {
 			> li {
 				> a {
-					padding:.375em 0;color:lighten(@navPrimaryBackground,20%);border-bottom: 1px solid darken(@navPrimaryBackground,8%);border-top:1px solid lighten(@navPrimaryBackground,6%);text-align:center;.rounded(0);text-shadow:0 -1px 0 fade(@black, 90%);
+					padding:.375em 0;border-bottom: 1px solid darken(@navPrimaryBackground,3%);border-top:1px solid lighten(@navPrimaryBackground,7%);text-align:center;.rounded(0);text-shadow:0 -1px 0 fade(@black, 50%);
 					i, span {display: block;clear: both;text-align: center;}
-					i {line-height: 2em;font-size: 1.5em}
-					span {font-size:1em;line-height: 1.5em;}
+					i {line-height: 2.5em;font-size: 1.5em;color:lighten(@navPrimaryBackground,30%);}
+					span {font-size:1em;line-height: 1.5em;color:lighten(@navPrimaryBackground,25%);}
 					&:hover, &:focus {background:darken(@navPrimaryBackground,1%);color:@white;}
 				}
 				&:first-child {
@@ -94,16 +94,15 @@
 				> a {color:darken(@navSecondaryBackground,55%);text-shadow:0 1px 0 @white;.rounded(0);background:transparent;line-height:1.5em;margin: 0;border-bottom:1px solid darken(@navSecondaryBackground,7%);.box-shadow(0 1px 0 fade(@white,50%));}
 				&:hover {background: lighten(@navSecondaryBackground,3%);}
 				&.active {
-					background:@white;.box-shadow(0 1px 0 rgba(0,0,0,.1));margin: 0 -2px;z-index: 4100;
 					> a {
-						border:0;
+						background: @white;
 						&:hover {color:@navPrimaryBackground}
 					}
 				}
 			}
 		}
 		&.minimized {
-			.transition(300ms);left:-25em;
+			.transition(400ms);left:-25em;
 		}
 	}
 
