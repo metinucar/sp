@@ -11,6 +11,6 @@ $(document).ready(function() {
 	});
 
 	$('.panel-toggle').on('click', function(){
-		$(this).closest('.panel-body').slideUp();
+		$(this).parents('.panel').find('.panel-body').slideToggle(700);
 	});
 });
