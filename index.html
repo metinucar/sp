@@ -15,12 +15,42 @@
     </head>
     <body class="splash">
 
-        <header class="navbar-fixed-top">
+        <header data-spy="affix" data-offset-top="0">
+
+          <h1>Serviceportalen</h1>
+
+          <div class="header-nav">
+
+            <a href="#" class="btn btn-default">
+              <i class="icon-home"></i>
+            </a>
+
+            <div class="btn-group help">
+              <button class="btn dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-info"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Om Serviceportalen</a></li>
+                <li><a href="#">Hjälp</a></li>
+                <li><a href="#">Kontakt</a></li>
+              </ul>
+            </div>
+
+            <div class="btn-group help">
+              <button class="btn dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-help"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Om Serviceportalen</a></li>
+                <li><a href="#">Hjälp</a></li>
+                <li><a href="#">Kontakt</a></li>
+              </ul>
+            </div>
+
             <div class="btn-group user-profile">
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
                 <img src="http://api.randomuser.me/0.2/portraits/women/28.jpg" />
-                <div class="name"><span class="first-name">Claire</span>&nbsp;<span class="last-name">Adams</span></div>
-                <span class="caret"></span>
+                <div class="name">Claire Adams</div>
               </button>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">Mitt konto</a></li>
@@ -29,11 +59,13 @@
                 <li><a href="#">Logga ut</a></li>
               </ul>
             </div>
+          </div>
+
         </header>
         <div class="jumbotron">
           <div class="container">
             <img src="http://upload.wikimedia.org/wikipedia/commons/c/cf/Lule%C3%A5_vapen.svg" alt="">
-            <h1>Luleå kommun | Serviceportalen</h1>
+            <h1>Luleå kommun</h1>
           </div>
         </div>
         <section class="body">
@@ -41,20 +73,20 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <a href="min-sida.html" class="widget">
-                            <i class="glyphicon glyphicon-dashboard"></i>
+                            <i class="icon-gauge"></i>
                             <span>Min sida</span>
                         </a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <a href="#" class="widget">
-                            <i class="glyphicon glyphicon-user"></i>
+                            <i class="icon-users"></i>
                             <span>Personal</span>
                         </a>
                     </div>
                     <div class="clearfix visible-sm visible-md"></div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <a href="#" class="widget">
-                            <i class="glyphicon glyphicon-screenshot"></i>
+                            <i class="icon-user"></i>
                             <span>Användare</span>
                         </a>
                     </div>
@@ -63,20 +95,20 @@
 
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <a href="#" class="widget">
-                            <i class="glyphicon glyphicon-align-center"></i>
+                            <i class="icon-folder"></i>
                             <span>Beställning</span>
                         </a>
                     </div>
                     <div class="clearfix visible-sm visible-md"></div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <a href="#" class="widget">
-                            <i class="glyphicon glyphicon-cog"></i>
+                            <i class="icon-tools"></i>
                             <span>Administration</span>
                         </a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <a href="#" class="widget">
-                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="icon-basket"></i>
                             <span>Orderhantering</span>
                         </a>
                     </div>
@@ -85,20 +117,20 @@
 
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <a href="#" class="widget">
-                            <i class="glyphicon glyphicon-cloud"></i>
+                            <i class="icon-database"></i>
                             <span>CMDB</span>
                         </a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <a href="#" class="widget">
-                            <i class="glyphicon glyphicon-list-alt"></i>
+                            <i class="icon-book-open"></i>
                             <span>Produktkatalog</span>
                         </a>
                     </div>
                     <div class="clearfix visible-sm visible-md"></div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <a href="#" class="widget">
-                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                            <i class="icon-network"></i>
                             <span>Atea</span>
                         </a>
                     </div>
@@ -107,17 +139,6 @@
         </section>
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <ul class="nav">
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Dolor</a></li>
-                            <li><a href="#">Sit Amet</a></li>
-                            <li><a href="#">Consectetur</a></li>
-                            <li><a href="#">Accusamus</a></li>
-                        </ul>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 copyright">
                         Copyright © 2007–2013 Serviceportalen
