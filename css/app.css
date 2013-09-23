@@ -489,20 +489,28 @@ body > header {
   background-position: 50% 50%;
   background-repeat: repeat repeat;
 }
-.splash body > header {
+body > header h1 {
+  margin: 0;
+  padding: 0 1em 0 3em;
+  color: #ffffff;
+  font-size: 1.75em;
+  line-height: 50px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
+}
+body.splash > header {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
-.splash body > header h1 {
+body.splash > header h1 {
   padding-left: 1em;
 }
-.splash body > header .btn {
+body.splash > header .btn {
   text-shadow: none;
 }
-.splash body > header:hover {
+body.splash > header:hover {
   background: #009de0;
   border-bottom: 2px solid #006793;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.33);
@@ -513,15 +521,7 @@ body > header {
   background-position: 50% 50%;
   background-repeat: repeat repeat;
 }
-.splash body > header:hover .btn {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
-}
-body > header h1 {
-  margin: 0;
-  padding: 0 1em 0 3em;
-  color: #ffffff;
-  font-size: 1.75em;
-  line-height: 50px;
+body.splash > header:hover .btn {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
 }
 .content {
