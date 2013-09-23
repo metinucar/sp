@@ -93,13 +93,13 @@
                 <span>Beställning</span>
               </a>
             </li>
-            <li class="active">
+            <li>
               <a href="#">
                 <i class="icon-tools"></i>
                 <span>Administration</span>
               </a>
             </li>
-            <li>
+            <li class="active">
               <a href="#">
                 <i class="icon-basket"></i>
                 <span>Orderhantering</span>
@@ -128,20 +128,17 @@
         <section class="nav-secondary hidden-xs hidden-sm">
           <div class="page-header">
             <span class="icon-menu"></span>
-            <h2>Administration</h2>
+            <h2>Orderhantering</h2>
           </div>
           <ul class="nav nav-pills nav-stacked">
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li class="active"><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#">Beställning</a></li>
+            <li><a href="#">Visa registrerade ordrar</a></li>
+            <li class="active"><a href="#">Produktorder artiklar</a></li>
+            <li><a href="#">Återlämnade</a></li>
+            <li><a href="#">Tekniker vy</a></li>
+            <li><a href="#">Batchordrar</a></li>
+            <li><a href="#">Ny batchorder</a></li>
+            <li><a href="#">Generera datornamn</a></li>
           </ul>
         </section>
         <section class="content">
@@ -150,27 +147,178 @@
 
               <div class="col-md-12">
                 <ol class="breadcrumb">
-                  <li><a href="#">Serviceportalen</a></li>
-                  <li class="active">Min sida</li>
+                  <li>Serviceportalen</li>
+                  <li>Orderhantering</li>
+                  <li class="active">Produktorder artiklar</li>
                 </ol>
               </div>
 
               <div class="col-md-12">
-                <div class="well">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, harum, voluptates quae quis doloremque alias natus explicabo facere obcaecati assumenda laboriosam quam quibusdam quasi placeat quas itaque illo ad officiis.</div>
-                <div class="well well-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, harum, voluptates quae quis doloremque alias natus explicabo facere obcaecati assumenda laboriosam quam quibusdam quasi placeat quas itaque illo ad officiis.</div>
-                <div class="well well-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, harum, voluptates quae quis doloremque alias natus explicabo facere obcaecati assumenda laboriosam quam quibusdam quasi placeat quas itaque illo ad officiis.</div>
+                <article class="panel">
+                  <div class="panel-heading">
+                    <header>Orderrads information</header>
+                  </div>
+                  <div class="panel-body">
+                    <div class="table-responsive">
+                      <table class="table table-striped table-hover">
+                        <thead>
+                          <tr>
+                            <th>Orderrad ID</th>
+                            <th>Produktnamn</th>
+                            <th>OrderID</th>
+                            <th>OrderCollecitonID</th>
+                            <th>Pris</th>
+                            <th>Datornamn</th>
+                            <th>Serienummer</th>
+                            <th>Säkerhetsmärkning</th>
+                            <th>Status</th>
+                            <th>Antal</th>
+                            <th>Adress</th>
+                            <th>Organization</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="clickable">
+                            <td>48031</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>48031</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>48031</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>48031</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>48031</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>48031</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>48031</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>48031</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>48031</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </article>
               </div>
 
               <div class="col-xs-12 col-sm-12 col-md-8">
                 <div class="panel">
                   <div class="panel-heading">
                     <header>Mina ärenden</header>
-                    <div class="btn-group">
-                      <a href="#" class="btn btn-primary">
-                        <i class="icon-plus"></i>
-                        Lägg till
-                      </a>
-                    </div>
+                    <a href="#" class="btn btn-primary btn-sm">
+                      <i class="icon-plus"></i>
+                      Lägg till
+                    </a>
                   </div>
                   <div class="panel-body">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, repudiandae rem. Quidem, repudiandae, architecto facilis excepturi odit dignissimos odio optio quasi sapiente modi rerum dolorem vitae non temporibus quaerat deleniti.
@@ -365,6 +513,13 @@
                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
                   <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
                 </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="well">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, harum, voluptates quae quis doloremque alias natus explicabo facere obcaecati assumenda laboriosam quam quibusdam quasi placeat quas itaque illo ad officiis.</div>
+                <div class="well well-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, harum, voluptates quae quis doloremque alias natus explicabo facere obcaecati assumenda laboriosam quam quibusdam quasi placeat quas itaque illo ad officiis.</div>
+                <div class="well well-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, harum, voluptates quae quis doloremque alias natus explicabo facere obcaecati assumenda laboriosam quam quibusdam quasi placeat quas itaque illo ad officiis.</div>
               </div>
             </div>
             <div class="row">
