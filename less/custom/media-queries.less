@@ -1,16 +1,26 @@
-	@media (max-width: 1200px) {
-		.content {left:0!important}
+	@media (max-width: 767px) {
+		.content {left: 0;}
+	}
+	@media (max-width:991px) {
 		.navbar-toggle {display: block;}
 	}
-
-	@media (min-width: 1440px) {
-		.container {
-			width: 1340px;
+	@media (min-width: 992px) and (max-width: 1199px) {
+		.nav-primary {
+			width: 5em;
+			.nav > li > a span {display: none;}
+		}
+		.nav-secondary {width: 16em;left:5em}
+		.content {
+			left: 21em;
+			&.full-width {left: 5em}
 		}
 	}
 
-	@media (min-width: 1600px) {
-		.container {
-			width: 1500px;
+	@media (min-width: 1200px) {
+		.nav-primary {width: 8em}
+		.nav-secondary {left: 8em;width:18em;}
+		.content {
+			left: 26em;
+			&.full-width {left: 8em}
 		}
 	}
