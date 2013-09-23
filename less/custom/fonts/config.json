@@ -47,6 +47,24 @@
       "src": "entypo"
     },
     {
+      "uid": "6341ebcbe1ed1f6777c1b9527ead368e",
+      "css": "video",
+      "code": 59479,
+      "src": "entypo"
+    },
+    {
+      "uid": "3def559c3c39b8500882e02892b7daa8",
+      "css": "picture",
+      "code": 59478,
+      "src": "entypo"
+    },
+    {
+      "uid": "85017ab6ca074831a8de771b40e9640c",
+      "css": "camera",
+      "code": 59477,
+      "src": "entypo"
+    },
+    {
       "uid": "5e9f01871d44e56b45ecbfd00f4dbc3a",
       "css": "layout",
       "code": 59449,
@@ -155,6 +173,30 @@
       "src": "entypo"
     },
     {
+      "uid": "1a7104205ea96e6f40ac716d0ca72f21",
+      "css": "lock",
+      "code": 59482,
+      "src": "entypo"
+    },
+    {
+      "uid": "e81fc3a0d39ace6ee735d7b24eedd56d",
+      "css": "lock-open",
+      "code": 59481,
+      "src": "entypo"
+    },
+    {
+      "uid": "25fc99a30fecc4021fdcae5fff5ba9ac",
+      "css": "eye",
+      "code": 59480,
+      "src": "entypo"
+    },
+    {
+      "uid": "875ab0f6d417223f6ec76ff7f0a4baed",
+      "css": "tag",
+      "code": 59483,
+      "src": "entypo"
+    },
+    {
       "uid": "23912d5623126e14b7b137c3ba557168",
       "css": "bookmark",
       "code": 59445,
@@ -185,6 +227,18 @@
       "src": "entypo"
     },
     {
+      "uid": "28f124a10127a47b9d9472699193d75a",
+      "css": "print",
+      "code": 59484,
+      "src": "entypo"
+    },
+    {
+      "uid": "005a38f6af74b31aeb817fedb09d2175",
+      "css": "keyboard",
+      "code": 59485,
+      "src": "entypo"
+    },
+    {
       "uid": "16890362e811b4cb8de36282b071fe30",
       "css": "comment",
       "code": 59440,
@@ -194,6 +248,24 @@
       "uid": "2c0b53280f82068f6bab4e2200025d9f",
       "css": "chat",
       "code": 59441,
+      "src": "entypo"
+    },
+    {
+      "uid": "2c5335c6e56b876139d7a58ab2f4b2fe",
+      "css": "bell",
+      "code": 59475,
+      "src": "entypo"
+    },
+    {
+      "uid": "97902f87200ce74d181044df02a0458d",
+      "css": "attention",
+      "code": 59476,
+      "src": "entypo"
+    },
+    {
+      "uid": "540b6a4262be769515c79700618b4aea",
+      "css": "address",
+      "code": 59486,
       "src": "entypo"
     },
     {
@@ -212,6 +284,36 @@
       "uid": "2626e3a1bbcd90e45849af3b58a1d594",
       "css": "trash",
       "code": 59414,
+      "src": "entypo"
+    },
+    {
+      "uid": "1189604bf305b6b03a74685ce60e6632",
+      "css": "doc-text",
+      "code": 59457,
+      "src": "entypo"
+    },
+    {
+      "uid": "1d7c1d30ad49a988556273a238097c2a",
+      "css": "doc-text-inv",
+      "code": 59456,
+      "src": "entypo"
+    },
+    {
+      "uid": "da0fd38d651815e3a12f6c030ff1fe5b",
+      "css": "newspaper",
+      "code": 59455,
+      "src": "entypo"
+    },
+    {
+      "uid": "51727ca007aa35ceabcaffc28934faee",
+      "css": "book-open",
+      "code": 59453,
+      "src": "entypo"
+    },
+    {
+      "uid": "48b79f27e4798f23bafa07b55dbe5b73",
+      "css": "book",
+      "code": 59454,
       "src": "entypo"
     },
     {
@@ -239,9 +341,45 @@
       "src": "entypo"
     },
     {
+      "uid": "e126987944593dfee041f8e2a68145db",
+      "css": "basket",
+      "code": 59451,
+      "src": "entypo"
+    },
+    {
+      "uid": "2c71ee1c65e1992ba32d5ffc5ee7f337",
+      "css": "bag",
+      "code": 59452,
+      "src": "entypo"
+    },
+    {
       "uid": "413717f5ea649e8d8b93938be277264a",
       "css": "calendar",
       "code": 59419,
+      "src": "entypo"
+    },
+    {
+      "uid": "8663320a860b00f26e94d3d15c9ba99a",
+      "css": "clock",
+      "code": 59458,
+      "src": "entypo"
+    },
+    {
+      "uid": "7f6916533c0842b6cec699fd773693d3",
+      "css": "hourglass",
+      "code": 59459,
+      "src": "entypo"
+    },
+    {
+      "uid": "4b20e1deee87faf4c3fab735fbd4bc1a",
+      "css": "lamp",
+      "code": 59460,
+      "src": "entypo"
+    },
+    {
+      "uid": "29e7f6072d5935d7818204d9b088508b",
+      "css": "block",
+      "code": 59461,
       "src": "entypo"
     },
     {
@@ -317,6 +455,120 @@
       "src": "entypo"
     },
     {
+      "uid": "054519608bca087aa306252471dda9c4",
+      "css": "progress-1",
+      "code": 59490,
+      "src": "entypo"
+    },
+    {
+      "uid": "3e49435dd1950a0b7543e13256c89e52",
+      "css": "progress-2",
+      "code": 59489,
+      "src": "entypo"
+    },
+    {
+      "uid": "d924bc68683f68ecf5e09e49731fd59a",
+      "css": "progress-3",
+      "code": 59488,
+      "src": "entypo"
+    },
+    {
+      "uid": "3eadc3e443cf1c7e17f1b44d21254c00",
+      "css": "target",
+      "code": 59487,
+      "src": "entypo"
+    },
+    {
+      "uid": "3626b3f3a0b284e7f4166b815719aece",
+      "css": "list",
+      "code": 59462,
+      "src": "entypo"
+    },
+    {
+      "uid": "97bd5542ed3e143d2ee9b60e14487615",
+      "css": "list-add",
+      "code": 59463,
+      "src": "entypo"
+    },
+    {
+      "uid": "414fe97e4af5215a06d29be0f2cecdf5",
+      "css": "network",
+      "code": 59491,
+      "src": "entypo"
+    },
+    {
+      "uid": "16f88519423df34fc5c48be7ded81b8f",
+      "css": "cd",
+      "code": 59465,
+      "src": "entypo"
+    },
+    {
+      "uid": "b32d88adf7cd6bfa8d0e177dfa642a4d",
+      "css": "inbox",
+      "code": 59464,
+      "src": "entypo"
+    },
+    {
+      "uid": "d83b7429002f7b0b206c8d550034212b",
+      "css": "install",
+      "code": 59467,
+      "src": "entypo"
+    },
+    {
+      "uid": "6a12c2b74456ea21cc984e11dec227a1",
+      "css": "globe",
+      "code": 59466,
+      "src": "entypo"
+    },
+    {
+      "uid": "114fed43140e2b5ce42c48b95c19375b",
+      "css": "cloud",
+      "code": 59493,
+      "src": "entypo"
+    },
+    {
+      "uid": "66a40c7c0ee5ea61f4b6aa0dd0f9ebb9",
+      "css": "cloud-thunder",
+      "code": 59492,
+      "src": "entypo"
+    },
+    {
+      "uid": "98c63f6b98c543b52d4c43bcd486d28f",
+      "css": "flash",
+      "code": 59471,
+      "src": "entypo"
+    },
+    {
+      "uid": "db112402805d9dadc01ce009fbfdb914",
+      "css": "paper-plane",
+      "code": 59470,
+      "src": "entypo"
+    },
+    {
+      "uid": "2f9f67ee4354feef8c1f51e03bac6ef3",
+      "css": "lifebuoy",
+      "code": 59494,
+      "src": "entypo"
+    },
+    {
+      "uid": "9ea7cce5e08e5ac2c225fabf2e6dc353",
+      "css": "briefcase",
+      "code": 59469,
+      "src": "entypo"
+    },
+    {
+      "uid": "11dd26ebf6934bf750a9156b353d7f2d",
+      "css": "suitcase",
+      "code": 59468,
+      "src": "entypo"
+    },
+    {
+      "uid": "fb5082fac1794b69a1381196219a836e",
+      "css": "chart-pie",
+      "code": 59495,
+      "src": "entypo"
+    },
+    {
       "uid": "7184d8171b6a9b18eabbace94cca21db",
       "css": "chart-line",
       "code": 59435,
@@ -332,6 +584,30 @@
       "uid": "32b4054f35918992f723e39f4095f005",
       "css": "chart-area",
       "code": 59433,
+      "src": "entypo"
+    },
+    {
+      "uid": "333bae7aaf7395d1004875be5a075661",
+      "css": "ticket",
+      "code": 59472,
+      "src": "entypo"
+    },
+    {
+      "uid": "c5cd6ea1981cecdd85c42d9d209bc3b8",
+      "css": "credit-card",
+      "code": 59496,
+      "src": "entypo"
+    },
+    {
+      "uid": "191bcf63575a78def53c907c3d3bf7f0",
+      "css": "floppy",
+      "code": 59473,
+      "src": "entypo"
+    },
+    {
+      "uid": "489090690d8bd1745e365485946e20a8",
+      "css": "megaphone",
+      "code": 59474,
       "src": "entypo"
     },
     {
