@@ -66,7 +66,7 @@
 
 // Panel
 	.panel {
-		.rounded(2px);border:1px solid darken(@white,10%);border-bottom:2px solid darken(@white,13%);.box-shadow(none);margin-bottom: 1.5em;
+		.rounded(2px);border:1px solid darken(@white,14%);border-bottom:2px solid darken(@white,17%);.box-shadow(none);margin-bottom: 1.5em;
 		.panel-heading {
 			padding: .5em 1em;background:darken(@white,3%);border-color:darken(@white,10%);position: relative;.rounded(2px);
 			header {font-family: @condensedFF;text-transform: uppercase;color:lighten(@black,30%);line-height: 24px;font-size:1.25em}
@@ -97,11 +97,10 @@
 
 // Breadcrumbs
 	.breadcrumb {
-		.rounded(0);background:white;border:0;border-bottom:1px solid darken(@white,8%);padding-left: 0;padding-right: 0;padding-top: 0;
+		.rounded(0);background:transparent;border:0;border-bottom:1px solid darken(@white,16%);padding-left: 0;padding-right: 0;padding-top: 0;.box-shadow(0 1px 1px fade(@white,60%));
 		> li {
-			a {
-				color:darken(@white,75%);
-			}
+			color:darken(@white,50%);font-size:.875em;line-height: 1.5em;
+			i {color:darken(@white,60%);font-size:1.5em;line-height: 1.5em;padding-left: .125em;padding-right: .125em;}
 		}
 	}
 

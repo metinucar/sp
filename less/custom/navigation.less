@@ -91,11 +91,13 @@
 			margin:0;padding: 0;
 			> li {
 				padding: 0;z-index: 4050;
-				> a {color:darken(@navSecondaryBackground,55%);text-shadow:0 1px 0 @white;.rounded(0);background:transparent;line-height:1.5em;margin: 0;border-bottom:1px solid darken(@navSecondaryBackground,7%);.box-shadow(0 1px 0 fade(@white,50%));}
-				&:hover {background: lighten(@navSecondaryBackground,3%);}
+				> a {
+					color:darken(@navSecondaryBackground,55%);text-shadow:0 1px 0 fade(@white,50%);.rounded(0);background:transparent;line-height:1.5em;margin: 0;border-bottom:1px solid darken(@navSecondaryBackground,7%);.box-shadow(0 1px 0 fade(@white,50%));
+					&:hover {background: lighten(@navSecondaryBackground,3%);}
+				}
 				&.active {
 					> a {
-						background: @white;
+						background:darken(@white,8%);
 						&:hover {color:@navPrimaryBackground}
 					}
 				}
