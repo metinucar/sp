@@ -26,15 +26,15 @@
 		> thead {
 			> tr {
 				> th {
-					font-weight: 900;
+					font-size: .925em;padding:.625em;color:darken(@white,70%);border-bottom: 1px solid darken(@white,20%);text-align:left;
 				}
 			}
 		}
 		> tbody
 			> tr {
 				> td {
-					padding:1em .875em;font-size: .925em;border:0;border-bottom:1px solid darken(@white,13%);text-shadow:0 1px 1px fade(@white,10%);
-					.label {border:1px solid fade(@black,30%);}
+					padding:.875em .625em;font-size: .875em;border:0;border-bottom:1px solid darken(@white,11%);text-shadow:0 1px 1px fade(@white,10%);text-align:left;
+					.label {border:1px solid fade(@black,30%);display: block;padding: 1px 2px}
 				}
 				&.clickable {
 					> td {cursor:pointer;}
@@ -66,14 +66,14 @@
 
 // Panel
 	.panel {
-		.rounded(2px);border:1px solid darken(@white,14%);border-bottom:2px solid darken(@white,17%);.box-shadow(none);margin-bottom: 1.5em;
+		.rounded(0);border:1px solid darken(@white,1%);.box-shadow(0 1px 1px 0px rgba(0,0,0,.2));margin-bottom: 1.5em;
 		.panel-heading {
-			padding: .5em 1em;background:darken(@white,3%);border-color:darken(@white,10%);position: relative;.rounded(2px);
+			padding: .5em 1em;background:darken(@white,10%);border:0;position: relative;.rounded(2px);.gradient(darken(@white,5%),darken(@white,10%), @white);
 			header {font-family: @condensedFF;text-transform: uppercase;color:lighten(@black,30%);line-height: 24px;font-size:1.25em}
 			.btn-group {
-				position: absolute;right: .5em;top: .875em;
+				position: absolute;right: .5em;top: .625em;
 				.btn {
-					.rounded(0);border:0;background:transparent;padding: 0;color:darken(@white,50%);font-size: 1.375em;width: 40px;line-height: 24px;
+					.rounded(0);border:0;background:transparent;padding: 0;color:darken(@white,40%);font-size: 1.375em;width: 40px;line-height: 24px;
 					&:hover, &:active {background:transparent;.box-shadow(none);color:@luleaBlue}
 				}
 			}
@@ -86,6 +86,7 @@
 				.btn {color:darken(@white,70%)}
 			}
 		}
+		.panel-body {border-top:1px solid darken(@white,16%);}
 	}
 
 // Well
@@ -99,7 +100,7 @@
 	.breadcrumb {
 		.rounded(0);background:transparent;border:0;border-bottom:1px solid darken(@white,16%);padding-left: 0;padding-right: 0;padding-top: 0;.box-shadow(0 1px 1px fade(@white,60%));
 		> li {
-			color:darken(@white,50%);font-size:.875em;line-height: 1.5em;
+			color:darken(@white,50%);font-size:.925em;line-height: 1.5em;
 			i {color:darken(@white,60%);font-size:1.5em;line-height: 1.5em;padding-left: .125em;padding-right: .125em;}
 		}
 	}
