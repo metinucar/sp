@@ -69,55 +69,55 @@
 
         <section class="nav-primary hidden-xs hidden-sm">
           <ul class="nav nav-pills nav-stacked">
-            <li>
+            <li class="active" data-section="Min sida">
               <a href="#">
                 <i class="icon-gauge"></i>
                 <span>Min sida</span>
               </a>
             </li>
-            <li>
+            <li data-section="Personal">
               <a href="#">
                 <i class="icon-users"></i>
                 <span>Personal</span>
               </a>
             </li>
-            <li>
+            <li data-section="Användare">
               <a href="#">
                 <i class="icon-user"></i>
                 <span>Användare</span>
               </a>
             </li>
-            <li>
+            <li data-section="Beställning">
               <a href="#">
                 <i class="icon-folder"></i>
                 <span>Beställning</span>
               </a>
             </li>
-            <li>
+            <li data-section="Administration">
               <a href="#">
                 <i class="icon-tools"></i>
                 <span>Administration</span>
               </a>
             </li>
-            <li class="active">
+            <li data-section="Orderhantering">
               <a href="#">
                 <i class="icon-basket"></i>
                 <span>Orderhantering</span>
               </a>
             </li>
-            <li>
+            <li data-section="CMDB">
               <a href="#">
                 <i class="icon-database"></i>
                 <span>CMDB</span>
               </a>
             </li>
-            <li>
+            <li data-section="Produktkatalog">
               <a href="#">
                 <i class="icon-book-open"></i>
                 <span>Produktkatalog</span>
               </a>
             </li>
-            <li>
+            <li data-section="Atea">
               <a href="#">
                 <i class="icon-network"></i>
                 <span>Atea</span>
@@ -125,12 +125,42 @@
             </li>
           </ul>
         </section>
-        <section class="nav-secondary hidden-xs hidden-sm">
+        <section class="nav-secondary">
           <div class="page-header">
             <span class="icon-menu"></span>
-            <h2>Orderhantering</h2>
+            <h2></h2>
           </div>
-          <ul class="nav nav-pills nav-stacked">
+          <ul class="nav nav-pills nav-stacked hidden" data-section-parent="Beställning">
+            <li><a href="#">Beställning</a></li>
+            <li><a href="#">Visa registrerade ordrar</a></li>
+            <li><a href="#">Produktorder artiklar</a></li>
+            <li><a href="#">Återlämnade</a></li>
+            <li><a href="#">Tekniker vy</a></li>
+            <li><a href="#">Batchordrar</a></li>
+            <li><a href="#">Ny batchorder</a></li>
+            <li><a href="#">Generera datornamn</a></li>
+          </ul>
+          <ul class="nav nav-pills nav-stacked hidden" data-section-parent="Administration">
+            <li><a href="#">Beställning</a></li>
+            <li><a href="#">Visa registrerade ordrar</a></li>
+            <li><a href="#">Produktorder artiklar</a></li>
+            <li><a href="#">Återlämnade</a></li>
+            <li><a href="#">Tekniker vy</a></li>
+            <li><a href="#">Batchordrar</a></li>
+            <li><a href="#">Ny batchorder</a></li>
+            <li><a href="#">Generera datornamn</a></li>
+          </ul>
+          <ul class="nav nav-pills nav-stacked hidden" data-section-parent="CMDB">
+            <li><a href="#">Beställning</a></li>
+            <li><a href="#">Visa registrerade ordrar</a></li>
+            <li><a href="#">Produktorder artiklar</a></li>
+            <li><a href="#">Återlämnade</a></li>
+            <li><a href="#">Tekniker vy</a></li>
+            <li><a href="#">Batchordrar</a></li>
+            <li><a href="#">Ny batchorder</a></li>
+            <li><a href="#">Generera datornamn</a></li>
+          </ul>
+          <ul class="nav nav-pills nav-stacked hidden" data-section-parent="Orderhantering">
             <li><a href="#">Beställning</a></li>
             <li><a href="#">Visa registrerade ordrar</a></li>
             <li class="active"><a href="#">Produktorder artiklar</a></li>
@@ -329,7 +359,6 @@
                       <header>Section</header>
                       <div class="btn-group">
                         <button type="button" class="btn btn-default btn-sm"><i class="icon-plus"></i></button>
-                        <button type="button" class="btn btn-default btn-sm"><i class="icon-cog"></i></button>
                         <button type="button" class="btn btn-default btn-sm panel-toggle"><i class="icon-down-open"></i></button>
                       </div>
                     </div>
