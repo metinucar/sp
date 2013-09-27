@@ -66,39 +66,59 @@
 
 // Panel
 	.panel {
-		.rounded(0);border:1px solid darken(@white,1%);.box-shadow(0 1px 1px 0px rgba(0,0,0,.2));margin-bottom: 1.5em;
+		.rounded(2px);border:1px solid darken(@white,1%);.box-shadow(0 1px 1px 0px rgba(0,0,0,.2));margin-bottom: 1.5em;position: relative;overflow: hidden;
+		&:hover {
+			.panel-heading .btn-group {
+				.btn {color:darken(@white,50%)}
+			}
+		}
 		.panel-heading {
-			padding: .5em 1em;background:darken(@white,10%);border:0;position: relative;.rounded(2px);.gradient(darken(@white,5%),darken(@white,10%), @white);
+			padding: .5em 1em;background:darken(@white,10%);border:0;position: relative;.rounded(2px);.gradient(darken(@white,8%),darken(@white,11%), darken(@white,2%));z-index: 4150;
 			header {font-family: @condensedFF;text-transform: uppercase;color:lighten(@black,30%);line-height: 24px;font-size:1.25em}
 			.btn-group {
-				position: absolute;right: .5em;top: .625em;
+				position: absolute;right: 0;top:0;
 				.btn {
-					.rounded(0);border:0;background:transparent;padding: 0;color:darken(@white,40%);font-size: 1.375em;width: 40px;line-height: 24px;
-					&:hover, &:active {background:transparent;.box-shadow(none);color:@luleaBlue}
+					.rounded(0);border:0;border-left:1px solid darken(@white,11%);background:transparent;padding: 0 10px;margin:1px 0;color:darken(@white,35%);text-shadow:0 1px 0 fade(@white,40%);font-size: 1.375em;line-height: 35px;
+					i {padding:8px 0;}
+					&.panel-toggle-add {
+						width:45px;
+						span {font-size: .925em;padding-right: 10px;display: none;.transition(400)}
+						&:hover, &.active {
+							width:100px;
+							span {display: inline-block;}
+						}
+					}
+					&:hover, &:active {background:transparent;color:@luleaBlue;.box-shadow(none);color:darken(@white,70%)}
+					&.active {
+						.box-shadow(none);
+						span, i {color:@luleaBlue;}
+					}
 				}
 			}
 			.btn-primary.btn-sm {
 				position:absolute;top:.125em;right:.125em;
 			}
 		}
-		&:hover {
-			.panel-heading .btn-group {
-				.btn {color:darken(@white,70%)}
-			}
+		.panel-body {
+			border-top:1px solid darken(@white,16%);z-index: 4050;
+			.table:last-child {margin-bottom: 0;}
 		}
-		.panel-body {border-top:1px solid darken(@white,16%);}
+		.panel-hidden {
+			position: absolute;top: 37px;right: 0;left: 0;bottom:0;padding: 15px;background: darken(@white,2%);z-index: 4100;display: none;overflow-x: hidden;overflow-y: scroll;
+			.close {position: absolute;top: 15px;right: 15px}
+		}
 	}
 
 // Well
 	.well {
-		.rounded(0);.box-shadow(none);color:darken(@white,60%);background:darken(@white,4%);border:0;border-bottom:1px solid darken(@white,8%);border-left: 5px solid darken(@white,8%);text-shadow:0 1px 1px fade(@white,50%);
-		&.well-info {background:lighten(@luleaBlue,50%);border-color:lighten(@luleaBlue,45%)}
-		&.well-warning {background:lighten(@luleaOrange,33%);border-color:lighten(@luleaOrange,26%)}
+		.rounded(0);.box-shadow(none);color:darken(@white,60%);background:darken(@white,1%);border:0;border-bottom:1px solid darken(@white,15%);border-left: 5px solid darken(@white,10%);text-shadow:0 1px 1px fade(@white,50%);
+		&.well-info {background:lighten(@luleaBlue,47%);border-left-color:lighten(@luleaBlue,40%);}
+		&.well-warning {background:lighten(@luleaOrange,31%);border-left-color:lighten(@luleaOrange,24%);}
 	}
 
 // Breadcrumbs
 	.breadcrumb {
-		.rounded(0);background:transparent;border:0;border-bottom:1px solid darken(@white,16%);padding-left: 0;padding-right: 0;padding-top: 0;.box-shadow(0 1px 1px fade(@white,60%));
+		.rounded(0);background:transparent;border:0;border-bottom:1px solid darken(@white,16%);padding-left: 0;padding-right: 0;padding-top: 0;margin: 0;.box-shadow(0 1px 1px fade(@white,60%));
 		> li {
 			color:darken(@white,50%);font-size:.925em;line-height: 1.5em;
 			i {color:darken(@white,60%);font-size:1.5em;line-height: 1.5em;padding-left: .125em;padding-right: .125em;}

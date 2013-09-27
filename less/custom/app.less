@@ -18,6 +18,7 @@
 
 @import "mixins";
 @import "variables";
+@import "plugins";
 @import "customstrap";
 @import "base";
 @import "navigation";
@@ -58,10 +59,14 @@
 		.nav-secondary & {
 			margin: 0;padding:1em 0;border-bottom: 1px solid darken(@navSecondaryBackground,9%);.box-shadow(0 1px 0 fade(@white,50%));
 			h2 {color:darken(@navSecondaryBackground,60%);font-size:1.5em;text-align: center;margin: 0;padding: 0;font-weight: 400;}
-			span {
-				position: absolute;color:darken(@navSecondaryBackground,30%);top:.425em;left:.25em;font-size: 1.5em;line-height: 1.5em;cursor:pointer;
-				&:hover, &:focus {color:darken(@navSecondaryBackground,40%);}
-			}
+		}
+	}
+
+	.shortcuts {
+		position: absolute;top:60px;left: 6em;z-index: 4100;background:@navSecondaryBackground;
+		span {
+			position: absolute;color:darken(@navSecondaryBackground,30%);top:.425em;left:.25em;font-size: 1.5em;line-height: 1.5em;cursor:pointer;
+			&:hover, &:focus {color:darken(@navSecondaryBackground,40%);}
 		}
 	}
 
