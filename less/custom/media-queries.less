@@ -1,11 +1,19 @@
 	@media (max-width:991px) {
 		.navbar-toggle {display: block;}
 		.content {left: 0;}
+		.default-actions {
+			.primary {display: none;width: 0;}
+			.tertiary {width:calc(~'100% - 16em');}
+		}
 	}
 	@media (min-width: 992px) and (max-width: 1199px) {
 		.nav-primary {
 			width: 5em;
 			.nav > li > a span {display: none;}
+		}
+		.default-actions {
+			.primary {width: 5em;}
+			.tertiary {width:calc(~'100% - 21em');}
 		}
 		.nav-secondary {width: 16em;left:5em}
 		.content {

@@ -1,6 +1,6 @@
 html {width: 100%;height: 100%;}
 body {
-	width: 100%;height: 100%;font-family: @defaultFF;font-weight: 300;color:darken(@white,70%);font-size:1.25em;line-height:1.5em;-webkit-font-smoothing: antialiased;
+	width: 100%;height: 100%;font-family: @defaultFF;font-weight: 300;background:darken(@white,5%);color:darken(@white,70%);font-size:1.25em;line-height:1.5em;-webkit-font-smoothing: antialiased;
 	&.splash {
 		background: url(../img/bg-splash.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -13,16 +13,32 @@ body {
 header {}
 footer {padding: 1em 0;}
 
+.default-actions {
+	position: absolute;top:50px;left: 0;right: 0;height:32px;z-index: 4000;
+	> div {position: relative;display: block;float: left;clear: right;height: 32px;}
+	* {.transition(400ms)}
+	.primary {
+		background:darken(@navPrimaryBackground,5%);border-bottom: 1px solid darken(@navPrimaryBackground,10%);width: 9em;
+		span {position:relative;color:lighten(@navPrimaryBackground,30%);font-size: 1.5em;line-height: 32px;cursor:pointer;display: block;float: right;}
+	}
+	.secondary {
+		background:darken(@navSecondaryBackground,5%);border-bottom: 1px solid darken(@navSecondaryBackground,15%);width: 16em;.inner-shadow(-1px,0,1px,.1);
+		h2 {color:darken(@navSecondaryBackground,60%);font-size:1.5em;text-align:left;margin: 0;padding: 0 0 0 1em;font-weight: 400;line-height: 32px;}
+		&.inactive {.inner-shadow(none);.box-shadow(none);border-bottom: 1px solid darken(@white,20%);background:darken(@white,6%);}
+	}
+	.tertiary {
+		background:darken(@white,10%);border-bottom: 1px solid darken(@white,20%);width:calc(~'100% - 25em');padding: 0 15px;
+		span, ol {display: block;float: left;clear: right;}
+		span {font-size: 1.25em;line-height: 32px;}
+	}
+}
+
 .content {
-	position: fixed;top:50px;bottom:0;right:0;padding-top:1.5em;padding-bottom: 1.5em;background:darken(@white,5%);overflow-y:auto;z-index: 4000;
+	position: fixed;top:82px;bottom:0;right:0;padding-top:1.5em;padding-bottom: 1.5em;background:darken(@white,5%);overflow-y:auto;z-index: 4000;.transition(400ms);
 	&.full-width {.transition(400ms);}
 	> .container {width: 100%}
 }
 
-/*#breadcrumb-wrapper {
-	position: absolute;top:50px;bottom:0;right:0;left: 9em;background:darken(@white,5%);overflow-y:auto;z-index: 4000;padding-top:1.5em;padding-bottom: 1.5em;
-	> .container {width: 100%}
-}*/
 
 a, a:hover, a:focus, a:active, .btn {
 	.transition(300ms);

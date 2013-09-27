@@ -21,7 +21,7 @@
 	}
 
 // Tables
-	.table-responsive {width: 100%;overflow-y: hidden;overflow-x: scroll;-ms-overflow-style: -ms-autohiding-scrollbar;-webkit-overflow-scrolling: touch;}
+	.table-responsive {width: 100%;overflow-y: hidden;overflow-x: auto;-ms-overflow-style: -ms-autohiding-scrollbar;-webkit-overflow-scrolling: touch;}
 	.table {
 		> thead {
 			> tr {
@@ -50,14 +50,14 @@
 	.btn {
 		.rounded(2px);font-family: @condensedFF;
 
-		&.btn-default 	{}
-		&.btn-primary {}
-		&.btn-success 	{}
-		&.btn-info 			{}
-		&.btn-warning 	{}
-		&.btn-danger 		{}
+		&.btn-default 			{}
+		&.btn-primary 			{}
+		&.btn-success 			{}
+		&.btn-info 				{}
+		&.btn-warning 			{}
+		&.btn-danger 			{}
 
-		&.btn-sm, &.btn-xs {}
+		&.btn-sm, &.btn-xs 		{}
 		&.btn-xs 				{}
 		&.btn-sm 				{}
 		&.btn-lg 				{}
@@ -118,9 +118,9 @@
 
 // Breadcrumbs
 	.breadcrumb {
-		.rounded(0);background:transparent;border:0;border-bottom:1px solid darken(@white,16%);padding-left: 0;padding-right: 0;padding-top: 0;margin: 0;.box-shadow(0 1px 1px fade(@white,60%));
+		.rounded(0);background:transparent;border:0;padding: 0 0 0 10px;margin: 0;.box-shadow(none);position: relative;
 		> li {
-			color:darken(@white,50%);font-size:.925em;line-height: 1.5em;
+			color:darken(@white,50%);font-size:.925em;line-height: 32px;
 			i {color:darken(@white,60%);font-size:1.5em;line-height: 1.5em;padding-left: .125em;padding-right: .125em;}
 		}
 	}
