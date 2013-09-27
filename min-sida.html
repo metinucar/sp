@@ -16,9 +16,9 @@
     <body>
       <header data-spy="affix" data-offset-top="0">
 
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <a href="#nav-responsive" class="navbar-toggle">
           <span class="icon-menu"></span>
-        </button>
+        </a>
 
         <h1>Serviceportalen | Luleå kommun</h1>
 
@@ -65,9 +65,18 @@
         </div>
 
       </header>
+      <div class="shortcuts">
+        <span class="icon-menu"></span>
+        <span class="icon-location"></span>
+        <ol class="breadcrumb hidden">
+          <li>Serviceportalen</li>
+          <li>Orderhantering</li>
+          <li>Produktorder artiklar</li>
+        </ol>
+      </div>
       <div id="wrapper" class="app">
 
-        <section class="nav-primary hidden-xs hidden-sm">
+        <section id="nav-responsive" class="nav-primary">
           <ul class="nav nav-pills nav-stacked">
             <li class="active" data-section="Min sida">
               <a href="#">
@@ -127,7 +136,6 @@
         </section>
         <section class="nav-secondary">
           <div class="page-header">
-            <span class="icon-menu"></span>
             <h2></h2>
           </div>
           <ul class="nav nav-pills nav-stacked hidden" data-section-parent="Beställning">
@@ -163,7 +171,7 @@
           <ul class="nav nav-pills nav-stacked hidden" data-section-parent="Orderhantering">
             <li><a href="#">Beställning</a></li>
             <li><a href="#">Visa registrerade ordrar</a></li>
-            <li class="active"><a href="#">Produktorder artiklar</a></li>
+            <li><a href="#">Produktorder artiklar</a></li>
             <li><a href="#">Återlämnade</a></li>
             <li><a href="#">Tekniker vy</a></li>
             <li><a href="#">Batchordrar</a></li>
@@ -174,19 +182,18 @@
         <section class="content">
           <div class="container">
             <div class="row">
-
-              <div class="col-md-12">
-                <ol class="breadcrumb">
-                  <li><i class="icon-location"></i> Serviceportalen</li>
-                  <li>Orderhantering</li>
-                  <li>Produktorder artiklar</li>
-                </ol>
-              </div>
-
               <div class="col-md-12">
                 <article class="panel">
                   <div class="panel-heading">
                     <header>Orderrads information</header>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default btn-sm panel-toggle-add">
+                        <i class="icon-plus"></i>
+                        <span>Lägg till</span>
+                      </button>
+                      <button type="button" class="btn btn-default btn-sm panel-toggle-settings"><i class="icon-cog"></i></button>
+                      <button type="button" class="btn btn-default btn-sm panel-toggle"><i class="icon-down-open"></i></button>
+                    </div>
                   </div>
                   <div class="panel-body">
                     <div class="table-responsive">
@@ -338,22 +345,82 @@
                       </table>
                     </div>
                   </div>
+                  <div class="panel-hidden panel-add">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <form role="form">
+                      <legend><i class="icon-plus"></i> Lägg till</legend>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, debitis, aliquam quaerat consectetur officiis quasi. Suscipit, in, ipsum cupiditate repudiandae repellat ipsa aut totam illum molestiae odio corrupti qui deserunt.</p>
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Check me out
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                          </div>
+                        </div>
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">Skicka</button>
+                    </form>
+                  </div>
+                  <div class="panel-hidden panel-settings">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <form role="form">
+                      <legend><i class="icon-cog"></i> Inställningar</legend>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, debitis, aliquam quaerat consectetur officiis quasi. Suscipit, in, ipsum cupiditate repudiandae repellat ipsa aut totam illum molestiae odio corrupti qui deserunt.</p>
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Check me out
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                          </div>
+                        </div>
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">Skicka</button>
+                    </form>
+                  </div>
                 </article>
               </div>
 
               <div class="col-xs-12 col-sm-12 col-md-8">
-                <div class="panel">
-                  <div class="panel-heading">
-                    <header>Mina ärenden</header>
-                    <a href="#" class="btn btn-primary btn-sm">
-                      <i class="icon-plus"></i>
-                      Lägg till
-                    </a>
-                  </div>
-                  <div class="panel-body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, repudiandae rem. Quidem, repudiandae, architecto facilis excepturi odit dignissimos odio optio quasi sapiente modi rerum dolorem vitae non temporibus quaerat deleniti.
-                  </div>
-                </div>
                 <article class="panel">
                     <div class="panel-heading">
                       <header>Section</header>
@@ -526,22 +593,6 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </div>
                 </article>
-                <div class="alert alert-success fade in">
-                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                  <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
-                </div>
-                <div class="alert alert-warning fade in">
-                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                  <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
-                </div>
-                <div class="alert alert-info fade in">
-                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                  <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
-                </div>
-                <div class="alert alert-danger fade in">
-                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                  <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
-                </div>
               </div>
             </div>
             <div class="row">
