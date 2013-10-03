@@ -1,21 +1,20 @@
 	@media (max-width:991px) {
 		.navbar-toggle {display: block;}
-		.content {left: 0;}
-		.default-actions {
-			.primary {display: none;width: 0;}
-			.tertiary {width:calc(~'100% - 16em');}
-		}
+		.content, .section-header {left: 0;}
+		.nav-minimize {width: 5em;}
 	}
+
 	@media (min-width: 992px) and (max-width: 1199px) {
 		.nav-primary {
 			width: 5em;
 			.nav > li > a span {display: none;}
 		}
-		.default-actions {
-			.primary {width: 5em;}
-			.tertiary {width:calc(~'100% - 21em');}
+		.section-header {
+			left: 21em;
+			&.full-width {left: 5em;}
 		}
 		.nav-secondary {width: 16em;left:5em}
+		.nav-minimize {width: 5em;}
 		.content {
 			left: 21em;
 			&.full-width {left: 5em}
@@ -23,10 +22,14 @@
 	}
 
 	@media (min-width: 1200px) {
-		.nav-primary {width: 9em}
-		.nav-secondary {left: 9em;width:16em;}
+		.nav-primary, .nav-minimize {width: 8.5em}
+		.nav-secondary {left: 8.5em;width:16em;}
+		.section-header {
+			left: 24.5em;
+			&.full-width {left: 8.5em;}
+		}
 		.content {
-			left: 25em;
-			&.full-width {left: 9em}
+			left: 24.5em;
+			&.full-width {left: 8.5em}
 		}
 	}

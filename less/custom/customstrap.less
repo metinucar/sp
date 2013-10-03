@@ -23,6 +23,7 @@
 // Tables
 	.table-responsive {width: 100%;overflow-y: hidden;overflow-x: auto;-ms-overflow-style: -ms-autohiding-scrollbar;-webkit-overflow-scrolling: touch;}
 	.table {
+		word-break: none;
 		> thead {
 			> tr {
 				> th {
@@ -45,7 +46,7 @@
 			}
 		&.table-hover > tbody > tr:hover > td {}
 	}
-
+	
 // Buttons
 	.btn {
 		.rounded(2px);font-family: @condensedFF;
@@ -66,32 +67,31 @@
 
 // Panel
 	.panel {
-		.rounded(2px);border:1px solid darken(@white,1%);.box-shadow(0 1px 1px 0px rgba(0,0,0,.2));margin-bottom: 1.5em;position: relative;overflow: hidden;
+		background:@white;.rounded(3px);border:1px solid darken(@bodyBackground,6%);border-bottom: 2px solid darken(@bodyBackground,12%);.box-shadow(none);margin-bottom: 1.5em;position: relative;overflow: hidden;
 		&:hover {
 			.panel-heading .btn-group {
 				.btn {color:darken(@white,50%)}
 			}
 		}
 		.panel-heading {
-			padding: .5em 1em;background:darken(@white,10%);border:0;position: relative;.rounded(2px);.gradient(darken(@white,8%),darken(@white,11%), darken(@white,2%));z-index: 4150;
-			header {font-family: @condensedFF;text-transform: uppercase;color:lighten(@black,30%);line-height: 24px;font-size:1.25em}
+			padding: .5em 1em;border:0;position: relative;.rounded(3px);background:darken(@white,1%);z-index: 4150;
+			header {text-transform: uppercase;color:darken(@luleaBlue,5%);line-height: 24px;font-size:1.125em;font-weight: 500;}
 			.btn-group {
 				position: absolute;right: 0;top:0;
 				.btn {
-					.rounded(0);border:0;border-left:1px solid darken(@white,11%);background:transparent;padding: 0 10px;margin:1px 0;color:darken(@white,35%);text-shadow:0 1px 0 fade(@white,40%);font-size: 1.375em;line-height: 35px;
-					i {padding:8px 0;}
+					.rounded(0);border:0;background:transparent;padding: 0 10px;margin: 0;color:darken(@white,35%);font-size: 1.375em;line-height: 37px;.box-shadow(none);
+					i {padding:0;line-height: 37px;height: 37px;}
 					&.panel-toggle-add {
 						width:45px;
-						span {font-size: .925em;padding-right: 10px;display: none;.transition(400)}
+						span {font-size: .925em;padding-right: 10px;display: none;}
 						&:hover, &.active {
 							width:100px;
 							span {display: inline-block;}
 						}
 					}
-					&:hover, &:active {background:transparent;color:@luleaBlue;.box-shadow(none);color:darken(@white,70%)}
+					&:hover, &:active {background:transparent;color:@luleaBlue;.box-shadow(none);color:@luleaBlue}
 					&.active {
-						.box-shadow(none);
-						span, i {color:@luleaBlue;}
+						span, i {color:darken(@white,50%);}
 					}
 				}
 			}
@@ -100,7 +100,7 @@
 			}
 		}
 		.panel-body {
-			border-top:1px solid darken(@white,16%);z-index: 4050;
+			border-top:1px solid darken(@white,10%);z-index: 4050;
 			.table:last-child {margin-bottom: 0;}
 		}
 		.panel-hidden {
@@ -132,3 +132,8 @@
 
 // Label
 	.label {.rounded(2px);font-size:1em;text-shadow:0 -1px 0 fade(@black,30%);color:@white;font-weight: 400;}
+
+// Pagination
+	.pagination {
+		&.active a {background: @luleaBlue;border-color:@luleaBlue;}
+	}

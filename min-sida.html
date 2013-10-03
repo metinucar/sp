@@ -66,21 +66,13 @@
 
       </header>
 
-      <section class="default-actions">
-        <div class="primary">
-          <span class="icon-menu"></span>
-        </div>
-        <div class="secondary">
-           <h2></h2>
-        </div>
-        <div class="tertiary">
-          <span class="icon-location"></span>
-          <ol class="breadcrumb">
-            <li>Serviceportalen</li>
-            <li>Orderhantering</li>
-            <li>Produktorder artiklar</li>
+      <section class="section-header">
+        <h2 class="pull-left">Administration</h2>
+        <ol class="breadcrumb pull-right hidden-xs">
+          <li>Serviceportalen</li>
+          <li>Orderhantering</li>
+          <li>Produktorder artiklar</li>
           </ol>
-        </div>
       </section>
       <div id="wrapper" class="app">
 
@@ -141,8 +133,12 @@
               </a>
             </li>
           </ul>
+          <div class="nav-minimize">
+            <span>|||</span>
+          </div>
         </section>
         <section class="nav-secondary">
+          <h2></h2>
           <ul class="nav nav-pills nav-stacked hidden" data-section-parent="Beställning">
             <li><a href="#">Beställning</a></li>
             <li><a href="#">Visa registrerade ordrar</a></li>
@@ -165,7 +161,7 @@
           </ul>
           <ul class="nav nav-pills nav-stacked hidden" data-section-parent="CMDB">
             <li><a href="#">Beställning</a></li>
-            <li><a href="#">Visa registrerade ordrar</a></li>
+            <li class="active"><a href="#">Visa registrerade ordrar</a></li>
             <li><a href="#">Produktorder artiklar</a></li>
             <li><a href="#">Återlämnade</a></li>
             <li><a href="#">Tekniker vy</a></li>
@@ -192,12 +188,12 @@
                   <div class="panel-heading">
                     <header>Orderrads information</header>
                     <div class="btn-group">
-                      <button type="button" class="btn btn-default btn-sm panel-toggle-add">
+                      <button type="button" class="btn btn-default btn-sm panel-toggle-add js-panel-add">
                         <i class="icon-plus"></i>
                         <span>Lägg till</span>
                       </button>
-                      <button type="button" class="btn btn-default btn-sm panel-toggle-settings"><i class="icon-cog"></i></button>
-                      <button type="button" class="btn btn-default btn-sm panel-toggle"><i class="icon-down-open"></i></button>
+                      <button type="button" class="btn btn-default btn-sm panel-toggle-settings js-panel-settings"><i class="icon-cog"></i></button>
+                      <button type="button" class="btn btn-default btn-sm panel-toggle js-panel-toggle"><i class="icon-down-open"></i></button>
                     </div>
                   </div>
                   <div class="panel-body">
@@ -221,7 +217,7 @@
                         </thead>
                         <tbody>
                           <tr class="clickable">
-                            <td>48031</td>
+                            <td>20101</td>
                             <td>Samsung Galaxy S3 Mini</td>
                             <td>35915</td>
                             <td>18545</td>
@@ -235,7 +231,7 @@
                             <td>Omsorgsförvaltningen</td>
                           </tr>
                           <tr class="clickable">
-                            <td>48031</td>
+                            <td>2645234</td>
                             <td>Samsung Galaxy S3 Mini</td>
                             <td>35915</td>
                             <td>18545</td>
@@ -249,7 +245,7 @@
                             <td>Omsorgsförvaltningen</td>
                           </tr>
                           <tr class="clickable">
-                            <td>48031</td>
+                            <td>21356</td>
                             <td>Samsung Galaxy S3 Mini</td>
                             <td>35915</td>
                             <td>18545</td>
@@ -263,7 +259,133 @@
                             <td>Omsorgsförvaltningen</td>
                           </tr>
                           <tr class="clickable">
-                            <td>48031</td>
+                            <td>56433</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>65427</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>845342</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>467235</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>567834</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>765238</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>8763453</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>342</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>645823</td>
+                            <td>Samsung Galaxy S3 Mini</td>
+                            <td>35915</td>
+                            <td>18545</td>
+                            <td>28</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><span class="label label-success">Restad</span></td>
+                            <td>1/1</td>
+                            <td>Storgatan 52B (Växjö)</td>
+                            <td>Omsorgsförvaltningen</td>
+                          </tr>
+                          <tr class="clickable">
+                            <td>9763425</td>
                             <td>Samsung Galaxy S3 Mini</td>
                             <td>35915</td>
                             <td>18545</td>
