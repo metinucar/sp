@@ -1,32 +1,36 @@
-	@media (max-width:991px) {
-		.navbar-toggle {display: block;}
-		.content {left: 0;}
-		.default-actions {
-			.primary {display: none;width: 0;}
-			.tertiary {width:calc(~'100% - 16em');}
-		}
-	}
-	@media (min-width: 992px) and (max-width: 1199px) {
-		.nav-primary {
-			width: 5em;
-			.nav > li > a span {display: none;}
-		}
-		.default-actions {
-			.primary {width: 5em;}
-			.tertiary {width:calc(~'100% - 21em');}
-		}
-		.nav-secondary {width: 16em;left:5em}
-		.content {
-			left: 21em;
-			&.full-width {left: 5em}
+	@media (max-width: 991px) {
+		.table-responsive {
+			width: 100%;
+			margin-bottom: 15px;
+			overflow-y: hidden;
+			overflow-x: scroll;
+			-ms-overflow-style: -ms-autohiding-scrollbar;
+			border: 1px solid #dddddd;
+			-webkit-overflow-scrolling: touch;
 		}
 	}
 
-	@media (min-width: 1200px) {
-		.nav-primary {width: 9em}
-		.nav-secondary {left: 9em;width:16em;}
-		.content {
-			left: 25em;
-			&.full-width {left: 9em}
+	@media (min-width: 1025px) {
+		.nav-primary {width: 12em;}
+		.nav-secondary {left: 12em;}
+		.section-header, header.affix, .content {
+			left: 28em;
+			&.full-width {left: 12em;}
+		}
+	}
+
+	// iPad Portrait
+	@media only screen and (max-width : 1024px)  {
+		.nav-primary {
+			width: 5em;
+			.nav > li > a {
+				i {display: block;clear: both;float: none;text-align: center;width: 100%;}
+				span {display:none}
+			}
+		}
+		.nav-secondary {left: 5em;}
+		.section-header, header.affix, .content {
+			left: 21em;
+			&.full-width {left:5em;}
 		}
 	}
