@@ -15,7 +15,7 @@
     </head>
     <body>
       <header class="full-width" data-spy="affix" data-offset-top="0">
-        <h1><span>Luleå kommun</span></h1>
+        <h1>Luleå kommun</h1>
 
         <div class="header-nav">
 
@@ -72,9 +72,10 @@
 
       <div id="wrapper" class="app">
 
-        <section id="nav-responsive" class="nav-primary">
+        <section class="nav-primary">
+          <h1 class="logo">Serviceportalen</h1>
           <ul class="nav nav-pills nav-stacked">
-            <li class="active" data-section="Min sida">
+            <li data-section="Min sida">
               <a href="#">
                 <i class="icon-gauge"></i>
                 <span>Min Sida</span>
@@ -110,7 +111,7 @@
                 <span>Orderhantering</span>
               </a>
             </li>
-            <li data-section="CMDB">
+            <li class="active" data-section="CMDB">
               <a href="#">
                 <i class="icon-database"></i>
                 <span>CMDB</span>
@@ -130,12 +131,12 @@
             </li>
           </ul>
         </section>
-        <section class="nav-secondary minimized">
+        <section class="nav-secondary">
           <h2>Min sida</h2>
           <ul class="nav nav-pills nav-stacked" data-section-parent="Beställning">
             <li><a href="#">Beställning</a></li>
             <li><a href="#">Visa registrerade ordrar</a></li>
-            <li><a href="#">Produktorder artiklar</a></li>
+            <li class="active"><a href="#">Produktorder artiklar</a></li>
             <li><a href="#">Återlämnade</a></li>
             <li><a href="#">Tekniker vy</a></li>
             <li><a href="#">Batchordrar</a></li>
@@ -172,9 +173,6 @@
             <li><a href="#">Ny batchorder</a></li>
             <li><a href="#">Generera datornamn</a></li>
           </ul>
-          <div class="nav-minimize">
-            <span>|||</span>
-          </div>
         </section>
         <section class="content full-width">
           <div class="container">
