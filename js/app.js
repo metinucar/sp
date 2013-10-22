@@ -40,30 +40,37 @@ $(document).ready(function() {
 	});
 
 // PRIMARY NAVIGATION
-	$('.nav-primary a').on('click', function(event){
+	// Add arrow icon to primary navigation items which have sub navigation
+	$('.nav-primary li').each(function(){
+		var navSectionTitle = $(this).data('section');
+		if($('.nav-secondary ul[data-section-parent="'+navSectionTitle+'"]').length > 0) {
+			$(this).children('a').toggleClass('has-subnav');
+			$('<i class="icon-right-open subnav-open" />').appendTo($(this).children('a'));
+		}
+	});
+
+	// Main navigation click function
+	$('.nav-primary a.has-subnav').on('click', function(event){
 		event.preventDefault();
-		$(this).parent('li').addClass('active').siblings('.active').removeClass('active');
+
+		// Animate
+		$('.nav-primary .nav').animate({left:'-16em'},{ queue: true, duration: 300});
+		$('.nav-secondary').animate({left:'0'},{ queue: true, duration: 300});
 
 		var sectionTitle = $(this).parents('li').data('section'),
 			linkedSection = $('.nav-secondary ul[data-section-parent="'+sectionTitle+'"]');
 
-		if(linkedSection.length > 0) {
+		// Update navigation title and add close icon
+		$('.nav-secondary h2').text(sectionTitle);
+		$('<i class="icon-left-open subnav-close" />').appendTo($('.nav-secondary h2'));
 
-			$('.nav-secondary h2').text(sectionTitle);
-			$('.nav-secondary.minimized').toggleClass('minimized');
-			$('.app .content.full-width, header.full-width, .section-header.full-width').removeClass('full-width');
-
-			linkedSection.removeClass('hidden').siblings('ul').addClass('hidden');
-		} else {
-			$('.nav-secondary').addClass('minimized', 800);
-			$('.app .content, header, .section-header').addClass('full-width', 800);
-		}
-		
+		// Show the right navigation
+		linkedSection.removeClass('hidden').siblings('ul').addClass('hidden');
 	});
 
-	// Secondary Navigation Show/Hide & Controlling the Content Width
-		$('.nav-minimize').on('click', function(){
-			$('.nav-secondary').toggleClass('minimized');
-			$('.app .content, .section-header, header').toggleClass('full-width');
-		});
+	// Close sub navigaiton
+	$('.nav-secondary h2').on('click', function(){
+		$('.nav-secondary').animate({left:'16em'},{ queue: true, duration: 300});
+		$('.nav-primary .nav').animate({left:'0'},{ queue: true, duration: 300});
+	});
 });
